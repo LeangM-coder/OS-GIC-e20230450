@@ -1,0 +1,9 @@
+The first line shows kvm, which means the system is running inside a virtual machine using the KVM (Kernel-based Virtual Machine) hypervisor. The hypervisor allows multiple operating systems to run on the same physical computer.
+
+Therefore, the system is running in a virtualized environment, not directly on real hardware.
+
+Virtualization type: KVM
+
+Kernel version: 7.0.0-38-generic
+
+Hostname: i4gic-os
