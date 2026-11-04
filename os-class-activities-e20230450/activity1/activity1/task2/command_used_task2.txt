@@ -1,0 +1,12 @@
+
+<-----------Task2------------>
+
+//-----------Version A------------//
+
+gcc -o dir_list_lib dir_list_lib.c
+./dir_list_lib                       
+
+//-----------Version B------------//
+
+gcc -Wall -Wextra dir_list_sys.c -o directory_list
+./directory_list
