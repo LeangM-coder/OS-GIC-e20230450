@@ -1,0 +1,37 @@
+# Core 2 - Move and Copy Commands
+
+# Step 1: Move first file using relative destination
+cd "$OSLAB_WORKSPACE/lab2/incoming"
+pwd
+mv -- "$file1" ../reports/
+
+# Step 2: Move second file using absolute paths
+cd "$OSLAB_WORKSPACE/lab2"
+pwd
+mv -- "$OSLAB_WORKSPACE/lab2/incoming/$file2" "$OSLAB_WORKSPACE/lab2/reports/"
+
+# Step 3: Copy both reports using relative paths
+pwd
+cp -- "reports/$file1" "TechCorp/$owner/"
+
+pwd
+cp -- "reports/$file2" "TechCorp/$owner/"
+
+# Step 4: Copy first report into archive with a new name
+pwd
+cp -- "reports/$file1" "TechCorp/$owner/archive/first-original.txt"
+
+# Step 5: Read first report from reader department
+cd "TechCorp/$reader"
+pwd
+cat "../$owner/$file1"
+cat "$OSLAB_WORKSPACE/lab2/TechCorp/$owner/$file1"
+
+# Step 6: My decision
+I chose relative paths for Step 3 because they are shorter
+and easier to use when working inside the lab folder.
+Absolute paths are better when working from another
+directory or when the exact file location is needed.
+
+Error: cat: 'reports/audit notes.txt': No such file or directory
+Fix: ../../reports/audit notes.txt

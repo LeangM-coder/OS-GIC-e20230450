@@ -1,0 +1,7 @@
+reports/audit notes.txt
+reports/cash flow.txt
+reports/README.txt
+TechCorp/Finance/archive/first-original.txt
+TechCorp/Finance/audit notes.txt
+TechCorp/Finance/cash flow.txt
+TechCorp/incoming/budget 2026.txt
