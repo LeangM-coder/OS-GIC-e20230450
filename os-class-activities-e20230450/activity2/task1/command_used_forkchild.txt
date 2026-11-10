@@ -1,0 +1,20 @@
+ 1551  cp -- evidence/paths.txt evidence/tree.txt "$SUBMISSION_REPO/lab2/evidence/"
+ 1552  cp -- evidence/checkpoint.txt "$SUBMISSION_REPO/lab2/evidence/"
+ 1553  cd ~/os-gic-e20230450
+ 1554  git pull
+ 1555  git add os-lab-e20230450/lab2
+ 1556  git commit -m "Lab 2"
+ 1557  git push
+ 1558  clear
+ 1559  ls
+ 1560  cd os-gic-e20230450/
+ 1561  ls
+ 1562  cd os-class-activities-e20230450/
+ 1563  ls
+ 1564  cd activity2
+ 1565  cd task1/
+ 1566  clear
+ 1567  ps -ef --forest | grep forkchild
+ 1568  pstree -p $(pgrep -o forkchild)
+ 1569  top
+ 1570  history | tail -n 20 > command_used_forkchild.txt

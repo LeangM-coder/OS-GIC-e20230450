@@ -1,0 +1,10 @@
+total 32
+drwxrwxr-x 2 gic-em-mengleang gic-em-mengleang  4096 Nov  5 20:11 .
+drwxrwxr-x 3 gic-em-mengleang gic-em-mengleang  4096 Nov  5 20:06 ..
+-rwxrwxr-x 1 gic-em-mengleang gic-em-mengleang 16392 Nov  5 20:11 forkchild
+-rw-rw-r-- 1 gic-em-mengleang gic-em-mengleang  1370 Nov  5 20:11 forkchild.c
+-rw-rw-r-- 1 gic-em-mengleang gic-em-mengleang     0 Nov  5 20:11 result_forkchild.txt
+Parent process (PID: 1517841) — creating child...
+Parent: waiting for child (PID: 1517842) to finish...
+Parent: child exited with status 0
+Parent: done.

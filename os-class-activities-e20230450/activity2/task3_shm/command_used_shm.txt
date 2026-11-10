@@ -1,0 +1,20 @@
+ 1644  nano shm-consumer.c
+ 1645  gcc -o shm-consumer shm-consumer.c -lrt
+ 1646  ./shm-producer
+ 1647  ls -l /dev/shm/OS-mengleang
+ 1648  ./shm-consumer
+ 1649  ls -l /dev/shm/OS-mengleang
+ 1650  ./shm-producer
+ 1651  ls -l /dev/shm/OS-emmengleang
+ 1652  ./shm-consumer
+ 1653  ls -l /dev/shm/OS-emmengleang
+ 1654  gcc -o shm-consumer shm-consumer.c -lrt
+ 1655  ./shm-consumer
+ 1656  ./shm-producer
+ 1657  ./shm-consumer
+ 1658  gcc -o shm-producer shm-producer.c -lrt
+ 1659  gcc -o shm-consumer shm-consumer.c -lrt
+ 1660  ./shm-producer
+ 1661  ./shm-consumer > result-shm-ipc.txt
+ 1662  cat result-shm-ipc.txt
+ 1663  history | tail -n 20 > command_used_shm.txt
