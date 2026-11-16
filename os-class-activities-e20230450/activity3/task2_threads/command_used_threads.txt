@@ -1,0 +1,20 @@
+ 1848  ./server > result_server.txt 2>&1 &
+ 1849  sleep 1
+ 1850  ./client > result_client.txt 2>&1
+ 1851  wait
+ 1852  cat result_server.txt result_client.txt > result_socket.txt
+ 1853  history | tail -n 20 > command_used_socket.txt
+ 1854  cd ..
+ 1855  ls
+ 1856  nano README.md
+ 1857  cd task2_threads/
+ 1858  nano threads.c
+ 1859  $ gcc -o threads threads.c -pthread
+ 1860  gcc -o threads threads.c -pthread
+ 1861  ./threads > result_threads.txt 2>&1
+ 1862  cat result_threads.txt
+ 1863  nano threads_mutex.c
+ 1864  gcc -o threads_mutex threads_mutex.c -pthread
+ 1865  ./threads_mutex > result_threads_mutex.txt 2>&1
+ 1866  cat result_threads_mutex.txt
+ 1867  history | tail -n 20 > command_used_threads.txt

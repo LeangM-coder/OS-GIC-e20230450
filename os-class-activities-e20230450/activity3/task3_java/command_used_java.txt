@@ -1,0 +1,30 @@
+ 1898  clear
+ 1899  ls
+ 1900  javac ThreadDemo.java
+ 1901  javac -version
+ 1902  cd ~
+ 1903  cd ~/os-gic-e20230450/os-class-activities-e20230450/activity3/task3_java
+ 1904  cd ~
+ 1905  wget https://download.oracle.com/java/21/latest/jdk-21_linux-x64_bin.tar.gz
+ 1906  wget https://api.adoptium.net/v3/binary/latest/21/ga/linux/x64/jdk/hotspot/normal/eclipse -O jdk21.tar.gz
+ 1907  tar -xzf jdk21.tar.gz
+ 1908  ls
+ 1909  export JAVA_HOME=$HOME/jdk-21.0.13+9
+ 1910  export PATH=$JAVA_HOME/bin:$PATH
+ 1911  javac -version
+ 1912  echo 'export JAVA_HOME=$HOME/jdk-21.0.13+9' >> ~/.bashrc
+ 1913  echo 'export PATH=$JAVA_HOME/bin:$PATH' >> ~/.bashrc
+ 1914  cd ~/os-gic-e20230450/os-class-activities-e20230450/activity3/task3_java
+ 1915  javac ThreadDemo.java
+ 1916  java ThreadDemo
+ 1917  java ThreadDemo > result_thread_demo.txt 2>&1
+ 1918  cat result_thread_demo.txt
+ 1919  nano RunnableDemo.java
+ 1920  javac RunnableDemo.java
+ 1921  java RunnableDemo > result_runnable_demo.txt 2>&1
+ 1922  cat result_runnable_demo.txt
+ 1923  nano PoolDemo.java
+ 1924  javac PoolDemo.java
+ 1925  java PoolDemo > result_pool_demo.txt 2>&1
+ 1926  cat result_pool_demo.txt
+ 1927  history | tail -n 30 > command_used_java.txt

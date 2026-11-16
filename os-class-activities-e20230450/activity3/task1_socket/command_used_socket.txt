@@ -1,0 +1,20 @@
+ 1838  gcc client.c -o client
+ 1839  nano client.c
+ 1840  gcc -o server server.c
+ 1841  gcc -o client client.c
+ 1842  ./server
+ 1843  $ ./server > result_server.txt 2>&1 &
+ 1844  $ sleep 1
+ 1845  $ ./client > result_client.txt 2>&1
+ 1846* $ ./server > result_server.txt 2>&1 &
+$ sleep 1
+$ ./client > result_client.txt 2>&1
+$ wait
+$ cat result_server.txt result_client.txt > result_socket.txt
+ 1847  $ cat result_server.txt result_client.txt > result_socket.txt
+ 1848  ./server > result_server.txt 2>&1 &
+ 1849  sleep 1
+ 1850  ./client > result_client.txt 2>&1
+ 1851  wait
+ 1852  cat result_server.txt result_client.txt > result_socket.txt
+ 1853  history | tail -n 20 > command_used_socket.txt
