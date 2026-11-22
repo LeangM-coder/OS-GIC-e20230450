@@ -1,0 +1,23 @@
+
+=== BEFORE RENAME ===
+19143148 -rw-rw-r-- 2 gic-em-mengleang gic-em-mengleang 12 Nov 13 07:46 tiger-hard.txt
+19143379 lrwxrwxrwx 1 gic-em-mengleang gic-em-mengleang  9 Nov 13 08:34 tiger-soft.txt -> tiger.txt
+hard: version 449
+soft: stored target: tiger.txt
+
+=== AFTER RENAME, BEFORE REPAIR ===
+19143148 -rw-rw-r-- 2 gic-em-mengleang gic-em-mengleang 12 Nov 13 07:46 tiger-hard.txt
+19143148 -rw-rw-r-- 2 gic-em-mengleang gic-em-mengleang 12 Nov 13 07:46 tiger-old.txt
+19143379 lrwxrwxrwx 1 gic-em-mengleang gic-em-mengleang  9 Nov 13 08:34 tiger-soft.txt -> tiger.txt
+hard: version 449
+stored target: tiger.txt
+soft: cat: tiger-soft.txt: No such file or directory
+
+=== AFTER REPAIR ===
+19143148 -rw-rw-r-- 2 gic-em-mengleang gic-em-mengleang 12 Nov 13 07:46 tiger-hard.txt
+19143148 -rw-rw-r-- 2 gic-em-mengleang gic-em-mengleang 12 Nov 13 07:46 tiger-old.txt
+19143379 lrwxrwxrwx 1 gic-em-mengleang gic-em-mengleang 13 Nov 18 09:54 tiger-soft.txt -> tiger-old.txt
+stored target: tiger-old.txt
+hard: version 449
+soft: version 449
+Decision: I stored a relative target (tiger-old.txt) because it is read from the folder holding the link, so it still works if the whole folder is moved. An absolute path would break after the move because it would still point to the old location.
